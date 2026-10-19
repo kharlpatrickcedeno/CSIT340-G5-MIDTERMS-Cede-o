@@ -1,5 +1,6 @@
 import { useState } from "react";
-
+import Stats from "./Stats";
+import Intro from "./Intro";
 
 function Hero() {
     const [stars, setStars] = useState(0);
@@ -25,7 +26,10 @@ function Hero() {
     }
     return (
         <>
+            {/* // header */}
+            <Intro />
 
+            {/* // div holding four buttons */}
             <div className="flex justify-center gap-4 py-6">
                 <button
                     className="cursor-pointer rounded-lg bg-[#800020] px-8 py-3 text-xl font-bold text-[#FFF9F2]"
@@ -52,6 +56,9 @@ function Hero() {
                     Reset
                 </button>
             </div>
+
+             {/* div holding the stats */}
+            <Stats stars={stars} downloads={downloads} issues={issues} />
         </>
 
     );

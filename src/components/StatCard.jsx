@@ -1,9 +1,9 @@
 
 function StatCard({value, label}) {
     return (
-        <div className="bg-[#FFF9F2] p-4 rounded-lg shadow-md">
-            <p className="text-2xl font-bold">{value}</p>
-            <p className="text-gray-600">{label}</p>
+        <div className="w-48 rounded-xl bg-[#F3E6D5] py-4 text-center">
+          <p className="text-4xl font-bold">{value}</p>
+          <p className="mt-1 text-lg text-[#000000]">{label}</p>
         </div>
     )
 }

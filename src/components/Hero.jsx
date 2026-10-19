@@ -1,6 +1,7 @@
 import { useState } from "react";
 import Stats from "./Stats";
 import Intro from "./Intro";
+import Contribute from "./Contribute";
 
 function Hero() {
     const [stars, setStars] = useState(0);
@@ -59,6 +60,9 @@ function Hero() {
 
              {/* div holding the stats */}
             <Stats stars={stars} downloads={downloads} issues={issues} />
+
+            {/* Contribute section */}
+            <Contribute contributors={stars} issues={issues} />
         </>
 
     );

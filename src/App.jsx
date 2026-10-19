@@ -1,5 +1,10 @@
 import { useState } from "react";
 import Navbar from "./components/NavBar";
+// import Stats from "./components/Stats";
+import Hero from "./components/Hero";
+import Intro from "./components/Intro";
+
+
 
 function App() {
   const [stars, setStars] = useState(0);
@@ -28,11 +33,10 @@ function App() {
     <div className="flex min-h-screen flex-col bg-[#FFF9F2] text-[#800020]">
       <Navbar />
 
-      <header className="px-20 pt-8 text-center">
-        <h2 className="text-7xl font-bold">Build pages faster.</h2>
-        <p className="mt-5 text-2xl text-[#000000]">An open-source component kit for React.</p>
-        <p className="mt-2 text-xl text-[#000000]">Made by Kharl Patrick R. Cedeño</p>
-      </header>
+      <Intro />
+
+      <Hero />
+
 
       <div className="flex justify-center gap-4 py-6">
         <button

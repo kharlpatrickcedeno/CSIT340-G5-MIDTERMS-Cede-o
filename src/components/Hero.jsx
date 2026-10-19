@@ -1,5 +1,5 @@
-import useState from "react";
-import Intro from "/Intro";
+import { useState } from "react";
+
 
 function Hero() {
     const [stars, setStars] = useState(0);
@@ -25,7 +25,6 @@ function Hero() {
     }
     return (
         <>
-            <Intro />
 
             <div className="flex justify-center gap-4 py-6">
                 <button

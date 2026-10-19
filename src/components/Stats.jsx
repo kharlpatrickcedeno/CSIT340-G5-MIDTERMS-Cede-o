@@ -18,10 +18,10 @@ function Stats() {
     }
 
     function handleReset() {
-    setStars(0);
-    setDownloads(0);
-    setIssues(5);
-  }
+        setStars(0);
+        setDownloads(0);
+        setIssues(5);
+    }
     return (
         <div className="flex justify-center gap-4 py-6">
             <button

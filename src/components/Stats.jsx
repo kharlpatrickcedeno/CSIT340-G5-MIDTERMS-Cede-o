@@ -1,20 +1,19 @@
 import { useState } from "react";
 
-function Stats() {
-    const [stars, setStars] = useState(0);
-    const [downloads, setDownloads] = useState(0);
-    const [issues, setIssues] = useState(5);
-
+function Stats({stars, downloads, issues}) {
+        const [starCount, setStars] = useState(stars ?? 0);
+    const [downloadCount, setDownloads] = useState(downloads ?? 0);
+    const [issueCount, setIssues] = useState(issues ?? 5);
     function handleStar() {
-        setStars(stars + 1);
+        setStars(starCount + 1);
     }
 
     function handleDownload() {
-        setDownloads(downloads + 1);
+        setDownloads(downloadCount + 1);
     }
 
     function handleReport() {
-        setIssues(issues + 1);
+        setIssues(issueCount + 1);
     }
 
     function handleReset() {

@@ -1,5 +1,5 @@
 import { useState } from "react";
-import Navbar from "/Navbar";
+import Navbar from "./components/NavBar";
 
 function App() {
   const [stars, setStars] = useState(0);
